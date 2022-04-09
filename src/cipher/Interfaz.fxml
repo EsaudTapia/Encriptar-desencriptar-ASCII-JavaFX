@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cipher.InterfazController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="6.0" onMouseDragged="#MoverVentana" onMousePressed="#ObtenerXY" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: black;" styleClass="color:#eceff1;" text=" Hacker De La Muerte" textAlignment="CENTER" textFill="#eceff1" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtMensaje" layoutX="25.0" layoutY="110.0" prefHeight="77.0" prefWidth="551.0" promptText="Ingrese el texto " style="-fx-border-color: green;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="110.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextArea>
+            <Label layoutX="25.0" layoutY="82.0" text="Mensaje:" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="82.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCerrar" layoutX="528.0" layoutY="13.0" mnemonicParsing="false" onAction="#cerrarLog" style="-fx-background-color: red;" textFill="#eceff1" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#eceff1" glyphName="TIMES" size="15.0" />
+               </graphic>
+            </Button>
+            <TextField fx:id="txtClave" layoutX="205.0" layoutY="252.0" prefHeight="30.0" prefWidth="190.0" promptText="Ingrese key" style="-fx-border-color: gold;" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="252.0" />
+            <Label layoutX="266.0" layoutY="218.0" prefHeight="17.0" prefWidth="68.0" text="Key/ llave:" textAlignment="CENTER" textFill="RED" textOverrun="WORD_ELLIPSIS" wrapText="true" AnchorPane.leftAnchor="266.0" AnchorPane.topAnchor="218.0">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="17.0" />
+            <Button fx:id="btnCodificar" layoutX="183.0" layoutY="318.0" mnemonicParsing="false" onAction="#comprobarparaCodificar" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: black; -fx-border-color: white;" text="Codificar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnDecodificar" layoutX="318.0" layoutY="318.0" mnemonicParsing="false" onAction="#comprobarparaDecodificar" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: Black; -fx-border-color: white;" text="Decodificar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
